@@ -93,7 +93,7 @@ public class ProgressActivity extends AppCompatActivity {
                 progressBar.setProgressBarColor(getResources().getColor(R.color.light_green));
 
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(ProgressActivity.this, "CompleteNotification");
-                builder.setContentTitle("IoT Air Humidifier");
+                builder.setContentTitle("IoT Air Purifier");
                 durationMinutes = duration / 60000;
                 if(durationMinutes > 1) {
                     builder.setContentText("Air purification for " + durationMinutes + " minutes is complete");
