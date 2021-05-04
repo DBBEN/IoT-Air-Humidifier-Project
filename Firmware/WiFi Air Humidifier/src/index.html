@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>WiFi Air Purifier</title>
+  <script>
+    var Socket;
+    function init(){
+      Socket = new WebSocket('ws://' + window.location.hostname + ':81/');
+      Socket.onmessage = function(event){
+        var data = JSON.parse(event.data);
+        console.log(data);
+      }
+    }
+  </script>
+</head>
+<body onload="javascript:init()">
+  <h4>IoT Air Purifier Server</h4>
+</body>
+</html>

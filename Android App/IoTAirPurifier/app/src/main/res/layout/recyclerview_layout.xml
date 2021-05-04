@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/labelDateTimeFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date &amp; Time:"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recordDateTimeFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelDateTimeFinal" />
+
+        <RelativeLayout
+            android:id="@+id/preLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recordDateTimeFinal">
+
+
+            <TextView
+                android:id="@+id/preAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PRE-AIR CONDITION"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labelPrePM2.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preAir"
+                android:layout_marginTop="5dp"
+                android:text="PM 2.5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recordPreAirQualityFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/labelPrePM2.5"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/labelPrePM2.5"
+                android:text="00"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labelPreGASFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelPrePM2.5"
+                android:layout_marginTop="2dp"
+                android:text="GAS"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recordPreGasFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/labelPreGASFinal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/labelPreGASFinal"
+                android:text="00"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/postLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/preLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/preLayout">
+
+            <TextView
+                android:id="@+id/postAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="POST-AIR CONDITION"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labelPostPM2.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postAir"
+                android:layout_marginTop="5dp"
+                android:text="PM 2.5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recordPostAirQualityFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/labelPostPM2.5"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/labelPostPM2.5"
+                android:text="00"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labelPostGASFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelPostPM2.5"
+                android:layout_marginTop="2dp"
+                android:text="GAS"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recordPostGasFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/labelPostGASFinal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/labelPostGASFinal"
+                android:text="00"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
